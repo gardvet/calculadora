@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <meta name="author" content="Hildegard Viana">
+    <meta name="descrption" content="calculadora criada em javascript">
+    <meta name="keywords" content="calculadora, calculo, calcular">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="100days.png" alt="logomarca">
+
+    </header>
+
+    <section class="calculator">
+        <form name="calcform" method="post" action="" id="form">
+            <fieldset>
+                <legend>Calculadora JS</legend>
+
+                <label for="valor1">Digite o valor <strong>1</strong>:</label>
+                <input type="text" name="valor1" id="valor1">
+
+                <label for="valor1">Digite o valor <strong>2</strong>:</label>
+                <input type="text" name="valor2" id="valor2">
+
+                <label for="oper">Selecione a operação</label>
+                <select name="oper" id="oper">
+                    <option value="somar">Somar</option>
+                    <option value="subtrair">Subtrair</option>
+                    <option value="multiplicar">Multiplicar</option>
+                    <option value="dividir">Dividir</option>
+                </select>
+
+                <label for="res">Resultado</label>
+                <input type="text" name="res" id="res">
+
+                <input type="button" value="calcular" class="botao" onclick="calcular(document.calcform.oper.value)">
+            </fieldset>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>Criado por: <span>Hildegard Viana</span> | 2021 &copy;</p>
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
